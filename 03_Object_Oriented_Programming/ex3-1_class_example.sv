@@ -8,7 +8,7 @@
 // or browse Examples
 
 
-class car;
+class car; //class definition
 
     typedef enum {
         AUTOMATIC,
@@ -19,6 +19,8 @@ class car;
     bit            m_is_locked[];   //declare a dynamic array
     transmission_t m_trans;
 
+
+ //public interfaces 
   task drive_forward(input int door);
     if (m_is_locked[door] == 0)
         $display("Car with transmission: %d is moving forward", m_trans.name());
